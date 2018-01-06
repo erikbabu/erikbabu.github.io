@@ -1,3 +1,13 @@
+h4
+{
+  text-align: right;
+}
+
+h2, h3, h4
+{
+  color: #1e6896;
+}
+
 .social-media
 {
   display: flex;
