@@ -42,6 +42,7 @@ h4
 
 .social-media
 {
+  padding: auto;
   display: flex;
   position: relative;
   left: 50%;
