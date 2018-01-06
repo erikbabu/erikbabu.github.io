@@ -1,8 +1,5 @@
 theme: jekyll-theme-cayman
 title: Erik Babu
-tagline: Home
 baseurl: ""
 paginate: 1
 locale: "en"
-markdown: kramdown
-
