@@ -9,8 +9,9 @@ h4
 
 .navbar
 {
+  display: inline-block;
   overflow: hidden;
-  background-color: #333;
+  background-color: #4CAF50;
   position: fixed;
   bottom: 0;
   border-radius: 10px;
@@ -35,8 +36,8 @@ h4
 
 .navbar a:hover
 {
-  background: #ddd;
-  color: black;
+  background: #2065d6;
+  color: white;
 }
 
 .social-media
