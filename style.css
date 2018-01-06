@@ -9,7 +9,7 @@ h4
 
 .navbar
 {
-  display: inline-block;
+  display: block;
   overflow: hidden;
   background-color: #4CAF50;
   position: fixed;
