@@ -1,7 +1,7 @@
 ul
 {
-  display: inline-flex;
-  position: absolute;
+  display: flex;
+  position: relative;
   left: 50%;
   transform: translate(-50%, 0%);
 }
