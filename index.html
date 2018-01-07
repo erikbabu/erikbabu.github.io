@@ -9,10 +9,11 @@ layout: default
     rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <!-- <link rel="stylesheet" media="screen and (max-width: 800px)" href="lowRes.css">
-  <link rel="stylesheet" media="screen and (min-width: 801px)" href="highRes.css"> -->
-
   <link rel="icon" href="home_icon.png"/>
+
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
 </head>
 
 <body>
