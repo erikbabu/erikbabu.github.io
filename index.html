@@ -5,14 +5,29 @@ layout: default
 {% include head.html %}
 
 <body>
-  <div class="navbar">
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#work">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="back-to-top.png" width="30px" height="30px"></button>
+  <script>
+    window.onscroll = function()
+    {
+      scrollFunction()
+    };
+
+    function scrollFunction()
+    {
+      if (document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    function topFunction()
+    {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 
   <img class="img-circle" src="erik.jpg" alt ="Drawing of me done by a friend" style="height:15em; width:15em;" align="center">
 
@@ -250,6 +265,7 @@ layout: default
         <b>Languages used</b>: VB6.0, SQL
       </p>
     <hr>
+
 </body>
 
 <footer>
