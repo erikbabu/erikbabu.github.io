@@ -196,19 +196,19 @@ layout: default
 		  of the clock timer's 'sleep' functionality. Changed busy waiting waiting implementation to 
 		  having a list of threads, descendingly ordered by their earliest wake up time. This meant
 		  that more threads could run in a given time, on average.   
-	  </li>
+	  </li></br>
           <li><b>Task 1:</b> 
 	  	  This task involved implementing scheduling algorithms. The first thing we needed to do was implement priority scheduling
                   for locks, semaphores and monitors. Once this was done, we worked on implementing priority donation for locks. Finally, 
 		  we implemented the BSD scheduling algorithm. Additionally, to implement BSD scheduling, we needed to create our own
 		  floating-point arithmetic functions.   
-	  </li>
+	  </li></br>
           <li><b>Task 2:</b>
 	  	  For this task, the aim was to get pintos to be able to support loading and running user programs (written in C) i.e. interacting
 		  with the OS through system calls. We also added support for passing arguments to new processes. We made sure that anything
 		  unsafe that the user program attempted would be killed, thereby protecting the kernel, and allowing other user processes to run
 		  without any issues. 
-          </li>
+	  </li></br>
           <li><b>Task 3:</b> 
 	  	  This was the most challenging task of the project. We needed to implement user virtual memory. For Task 2, every user program
 		  managed to fit inside the 2MB RAM. However, for this task, we allowed user programs to "think" that they had 3GB to work with.
@@ -219,7 +219,7 @@ layout: default
 		  to complete it in time. This task, much like the others, was difficult due to the small time frame we had to complete the assignment. 
 		  There were a lot of synchronisation cases we needed to consider to prevent deadlocks from occurring.  
 	  </li>
-        </ol></br>
+        </ol>
         <b>Language used:</b> C
       </p>
     <h2><a href="https://github.com/erikbabu/image_steganography">Image Steganography</a></h2>
