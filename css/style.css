@@ -122,15 +122,5 @@ h4
 
 .social-media li:nth-child(4) a:before
 {
-  background: #3B5998;
-}
-
-.social-media li:nth-child(5) a:before
-{
-  background: #DB4437;
-}
-
-.social-media li:nth-child(6) a:before
-{
   background: #1ED760;
 }
