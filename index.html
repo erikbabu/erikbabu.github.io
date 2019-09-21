@@ -40,7 +40,7 @@ layout: default
     Everybody knows <a href="https://www.youtube.com/watch?v=LTHzlUQDGmc">you get better mileage from elephants</a>.
     My interests include anything related to computer science, football and Formula 1.
     When time permits, I also perform stand-up comedy.
-    I am currently undertaking the penultimate year of a 4-year Computing (MEng) degree at Imperial College London.
+    I am currently undertaking the final year of a 4-year Computing (MEng) degree at Imperial College London.
     For more on my (lack of a) social life, I recommend you take a look at my social media and other accounts listed below.
     </p>
     <ul class="social-media">
@@ -52,12 +52,6 @@ layout: default
       </li>
       <li><span class="rwd-line"><a href="https://www.instagram.com/erikbabu/">
         <i class="fa fa-instagram" aria-hidden="true"></i></span></a>
-      </li>
-      <li><span class="rwd-line"><a href="https://www.facebook.com/erik.babu">
-        <i class="fa fa-facebook" aria-hidden="true"></i></span></a>
-      </li>
-      <li><span class="rwd-line"><a href="https://plus.google.com/u/0/105440643455019414557">
-        <i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
       </li>
       <li><span class="rwd-line"><a href="https://open.spotify.com/user/erikbabu">
         <i class="fa fa-spotify" aria-hidden="true"></i></span></a>
@@ -89,6 +83,16 @@ layout: default
         ◆ <i>March 2017</i>
       </li>
     </ul>
+
+    <u>Performance</u>
+    <ul class="university-grades">
+      <li>Year 1 - 65% (2:1)</li>
+      <li>Year 2 - 73% (1<sup>st</sup>)</li>
+      <li>Year 3 - 77% (1<sup>st</sup>)</li>
+    </ul>
+    Combined Overall: 73% (1<sup>st</sup>)
+    <br></br>
+
     <h2>Maru-A-Pula School | A-Levels and IGCSEs | Gaborone, Botswana</h2>
     <h3 align="right">January 2009 - November 2015</h3>
     <u>A-Levels</u>
@@ -186,30 +190,34 @@ layout: default
     <ul class="skills">
       <li>Proficient</li>
       <ul class="skills">
-        <li>Java</li>
-        <li>C</li>
-        <li>SQL</li>
         <li>Python</li>
+        <li>Java</li>
+        <li>SQL</li>
         <li>Test Driven Development and Unit Testing</li>
+        <li>Bash scripting</li>
       </ul></br>
       <li>Familiar</li>
       <ul class="skills">
+        <li>C</li>
         <li>C++</li>
+        <li>Go</li>
         <li>Haskell</li>
         <li>Elastic Stack (Logstash, ElasticSearch, Kibana)</li>
-        <li>Ruby and Bash scripting</li>
+        <li>Ruby</li>
         <li>Prolog</li>
         <li>Javascript</li>
-        <li>HTML and CSS</li>
-        <li>Less</li>
+        <li>HTML, CSS and Less</li>
         <li>VB6.0</li>
       </ul></br>
       <li>Frameworks used</li>
       <ul class="skills">
+        <li>Spring (Java)</li>
         <li>JUnit + Mockito (Java Testing)</li>
         <li>Django (Python)</li>
+        <li>Flask (Python)</li>
+        <li>TensorFlow + Keras (Python)</li>
+        <li>Pytest (Python Testing)</li>
         <li>React + Redux (JS)</li>
-        <li>Spring (Java)</li>
         <li>Bootstrap</li>
       </ul>
     </ul>
@@ -217,8 +225,8 @@ layout: default
     <ul class="skills">
       <li>Data Analysis</li>
       <li>Comfortable working on Linux, Mac and Windows Operating Systems</li>
-      <li>Touch typing at more than 100 words per minute</li>
-      <li>Report writing in LaTeX</li>
+      <li>Touch typing at around 100 words per minute</li>
+      <li>LaTeX</li>
       <li>Microsoft Office</li>
       <li>Public Speaking</li>
       <li>Presentation Skills</li>
@@ -226,6 +234,42 @@ layout: default
     <hr>
 
     <h1 id="projects">Other Projects</h1>
+    <h2>Wireless Sensor Network Individual Project</h2>
+      <h4>February 2019 - March 2019</h4>
+      <p>
+        Developed a reliable wireless sensor network in a star topology, corresponding of 9 sender nodes and a base station, which was capable of maintaining ~99% Packet Delivery Ratio and Round Trip Time of 15-25 ms. This was particularly challenging because we needed to ensure that each sender node sent packets at a (fixed) rate of 5 per second. The developed solution also proved to be resistant to jamming attacks; when tested with a jammer operating every 50ms in 500ms intervals, we still maintained 99% delivery rate. The nodes (Texas Instruments Sensor Tags) ran the contiki OS, meaning all code flashed onto the hardware was written in C. Simulations of our network were run on Cooja.
+      <p>
+      <p>
+        To show the packet delivery ratio and round trip times in real time, a visualisation was developed in python (matplotlib) which read data from a serial port that the base station was connected to. As data was coming in from 9 sources simultaneously, to prevent clobbering of messages (which would not get picked up by our filter and thus incorrectly report metrics), we applied the producer consumer principle; one thread placed data in a queue and another one graphed it.
+      </br>
+      <b>Languages/Frameworks used</b>: C (ContikiOS), Cooja, Python
+      </p>
+    <h2>Edward.AI (Web Application)</h2>
+      <h4>October 2018 - December 2018</h4>
+      <p>
+        Third Year Software Engineering Group project. Our task was to develop a digital assistant for Imperial College London that could help current and prospective students by providing a single point of information for all things Imperial (and even some general knowledge about the world).
+      <p>
+      <p>
+        Users could ask Edward a question, either by typing it in or using the voice command option. Edward would display the answer on screen, as well as dictate the answer in an articulate male British accent (to simulate its namesake, King Edward VII).
+      </p>
+      <p>
+        An administrator dashboard was also created that allowed admins to:
+        <ul class="edward-admin">
+          <li>View latest questions asked</li>
+          <li>See the number of positively/negatively rated questions</li>
+          <li>Filter all of this information by start-/end- dates and other criteria</li>
+          <li>Change the neural network model being used to answer questions</li>
+          <li>Add/Modify/Delete data-sets and re-train the model to improve future performance</li>
+        </ul>
+      </p>
+      <p>
+        The back-end was implemented as a REST-API to reduce coupling with the front-end. We developed our own Recurrent Neural Network (RNN), using specifically bi-directional GRUs, to tackle the challenge of question answering. Our model was developed using Keras. A question answering model developed by Facebook, DrQA, was also integrated into the application, to enable Edward to answer general knowledge questions about the world. The DrQA model answered questions by fetching the most likely answer from Wikipedia.
+      </p>
+      <p>
+        The product was developed following the Scrum methodology over a series of 4 two-week checkpoints. I additionally acted as scrum master throughout the project. GitHub was used for version control and CircleCI was used for continuous integration.
+        </br>
+        <b>Languages/Frameworks used</b>: React.js, Keras, Python/Flask, Gunicorn, Nginx, Memcached, Server-Sent Events (SSE), AWS RDS, MySQL, SQLite
+      </p>
     <h2>Handy Peters (Web Application)</h2>
       <h4>May 2018 - June 2018</h4>
       <p>
@@ -365,7 +409,6 @@ layout: default
     <span style="font-size:1.3em"><h3>Contact details</h3></span>
     <b>Personal E-mail:</b> erikbabu@gmail.com</br>
     <b>University E-mail:</b> eb1816@ic.ac.uk</br>
-    <b>Cellphone Number:</b> +44 (0) 7397 092 900
   </p>
   <h6 background-color="transparent" align="right">Copyright &copy; Erik Babu 2018</h6>
   </div>
